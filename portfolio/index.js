@@ -1,3 +1,4 @@
+
 const i18Obj = {
   'en': {
       'skills': 'Skills',
@@ -95,15 +96,18 @@ const burger = document.querySelector('.header__block_nav');
 
 hamburger.addEventListener('click', toggleMenu);
 
+
 function toggleMenu() {
     hamburger.classList.toggle('open');
     burger.classList.toggle('open'); 
 };
 
+
 burger.addEventListener('click', closeMenu);
 
 function closeMenu(event) {
     if (event.target.classList.contains('.header__block_nav-link')) {
+
         hamburger.classList.remove('open');
         burger.classList.remove('open');
     };
@@ -258,3 +262,5 @@ window.addEventListener('load', getLocalStorage)
 // local end
 
 console.log('1.Смена изображений в секции portfolio +25\n2.Перевод страницы на два языка +25\n3.Переключение светлой и тёмной темы +25\n4.Дополнительный функционал: выбранный пользователем язык отображения страницы и светлая или тёмная тема сохраняются при перезагрузке страницы +5\n5.Дополнительный функционал: сложные эффекты для кнопок при наведении и/или клике +5\nScore: 85/85')
+
+
