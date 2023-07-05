@@ -11,7 +11,7 @@ const changePhoto = (event) => {
           (photo.src = `./images/img/${season}/${index + 1}.jpg`)
       );
 
-      buttons.forEach((el) => el.classList.remove('active'));
+      portfolioButtons.forEach((el) => el.classList.remove('active'));
     }
     event.target.classList.add('active');
   });

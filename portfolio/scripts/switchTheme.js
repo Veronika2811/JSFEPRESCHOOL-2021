@@ -10,7 +10,7 @@ const changeTheme = () => {
 const switchTheme = () => {
   let currentTheme = localStorage.getItem('theme') || 'dark';
 
-  if (theme === 'white') changeTheme();
+  if (currentTheme === 'white') changeTheme();
 
   buttonSwitchTheme.addEventListener('click', () => {
     currentTheme === 'dark'
