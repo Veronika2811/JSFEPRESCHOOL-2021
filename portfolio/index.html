@@ -43,7 +43,7 @@
       </div>
       <div class="header__switch-theme"></div>
       <div class="header__hamburger hamburger">
-            <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
       </div>
       <div class="overlay"></div>
     </div>
@@ -158,9 +158,20 @@
             <span class="title__text" data-i18="video">Video</span>
           </h2>
         </div>
-        <div class="video__poster">
-          <div class="video__button">
-            <button type="button" class="button__play"></button>
+        <div class="video__player">
+          <div class="video__poster"></div>
+          <div class="button__play video__play"></div>
+          <video class="viewer" src="./video/video.mp4"></video>
+          <div class="video__controls controls">
+            <div class="controls__button ico_play"></div>
+            <div class="video-progress">
+              <progress class="progress-bar" value="3" min="0" max="59"></progress>
+              <input class="progress" type="range" value="0" min="0" step="1" max="59" data-seek="18">
+            </div>
+            <div class="volume-controls">
+              <div class="controls__button ico_volume-on"></div>
+              <input class="volume" type="range" name="volume" data-mute="0.3" value="0.3" max="1" min="0" step="0.01">
+            </div>
           </div>
         </div>
       </div>
@@ -237,9 +248,28 @@
       <div class="wrapper contacts__wrapper">
         <h2 class="contacts__title" data-i18="contact-me">Contact me</h2>
         <form class="contacts__form">
-          <input type="email" data-i18="placeholder-0" placeholder="E-mail">
-          <input type="tel" data-i18="placeholder-1" placeholder="Phone">
-          <textarea placeholder="Message" data-i18="placeholder-2"></textarea>
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            placeholder="E-mail"
+            data-i18="placeholder-0"
+            class="contacts__input"
+          >
+          <input
+            type="tel"
+            name="tel"
+            autocomplete="off"
+            placeholder="Phone"
+            data-i18="placeholder-1"
+            class="contacts__input"
+          >
+          <textarea
+            name="info"
+            placeholder="Message"
+            data-i18="placeholder-2"
+            class="contacts__textarea"
+          ></textarea>
           <button type="submit" class="button button_colored"data-i18="send-message">
             Send message
           </button>

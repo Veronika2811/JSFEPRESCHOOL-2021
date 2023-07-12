@@ -1,5 +1,7 @@
 const portfolioButtonsContainer = document.querySelector('.portfolio__buttons');
-const portfolioButtons = [...portfolioButtonsContainer.querySelectorAll('.button')];
+const portfolioButtons = [
+  ...portfolioButtonsContainer.querySelectorAll('.button'),
+];
 const portfolioImages = [...document.querySelectorAll('.photo')];
 
 const changePhoto = (event) => {
