@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>random-jokes</title>
-    <link rel="shortcut icon" href="./assets/30466-673ab7.ico">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body class="body">
-  <main class="main">
-    <div class="header">
-      <img class="moon" src="./assets/svg/1.png"></img>
-      <pre class="clock">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <img class="moon" src="./images/png/moon.png" alt="moon">
+      <div class="clock">
         <p class="time"></p>
-        <pre><span class="date"></span>/<span class="month"></span>/<span class="year"></span></pre>
-        <p class="today"></p>
-    </div>
-  </div>
-  <div class="container">
-    <h1 class="quote"></h1>
-      <hr>
+        <p class="date"></p>
+        <p class="day-week"></p>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="quote">...</h1>
+      <hr class="line">
       <p class="author"></p>
-    <div class="buttons">
-      <div class="lang">
-        <span class="lang__item lang__active" data-lang="en">en</span>
-        <span class="lang__slash">/</span>
-        <span class="lang__item" data-lang="ru">ru</span>
-      </div>
-      <div class="buttons__play">
-        <audio src="./assets/audio/Skylar Grey - I Know You.mp3" class="audio"></audio>
-        <div class="btn__prev"><img src="./assets/svg/prev.svg" alt=""></div>
-        <div class="btn__play"><img class="img__src" src="./assets/svg/play.svg" alt="" style="width: 40px; height: 40px;"></div>
-        <div class="btn__next"><img src="./assets/svg/next.svg" alt=""></div>
-      </div>
-      <div class="btn from-left">Next</div>
-  </div>
-</main>
-  <footer>
-    <div class="footer-container">
-        <div class="footer-container__github">
-            <span class="copy">©</span>
-            <span class="year">2022</span>
-            <a class="github" href="https://github.com/Veronika2811">github Veronika2811</a>
+      <div class="buttons">
+        <div class="languages">
+          <span class="languages__item languages__en active">en</span>
+          <span class="languages__slash">/</span>
+          <span class="languages__item languages__ru">ru</span>
         </div>
-        <a href="https://rs.school/js-stage0/" class="footer-container__link"></a>
-    </div>  
-</footer>
-  <script type="module" src="./index.js" defer></script>
-</body>
+        <div class="buttons__audio-player">
+          <audio src="./audio/JessieWare-MeetMeInTheMiddle.mp3" class="audio"></audio>
+          <div class="ico ico_prev"></div>
+          <div class="ico ico_play"></div>
+          <div class="ico ico_next"></div>
+        </div>
+        <div class="button">Next</div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <span>© 2022</span>
+        <a class="footer__link" href="https://github.com/Veronika2811">Veronika2811</a>
+      </div>
+      <a href="https://rs.school/js-stage0/" class="footer__link-rss"></a>
+    </footer>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
 </html>
