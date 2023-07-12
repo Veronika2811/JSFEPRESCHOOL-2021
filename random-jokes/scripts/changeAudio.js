@@ -6,9 +6,9 @@ let isPlay = false;
 let songIndex = 0;
 
 const songs = [
-  'Skylar Grey - I Know You',
-  'Jessie Ware - Meet Me In The Middle',
-  'Vaults - One Last Night',
+  'SkylarGrey-IKnowYou',
+  'JessieWare-MeetMeInTheMiddle',
+  'Vaults-OneLastNight',
 ];
 
 const loadingSong = (song) => {
