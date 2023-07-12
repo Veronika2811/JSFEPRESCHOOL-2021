@@ -1,5 +1,7 @@
 const portfolioButtonsContainer = document.querySelector('.portfolio__buttons');
-const portfolioButtons = [...portfolioButtons.querySelectorAll('.button')];
+const portfolioButtons = [
+  ...portfolioButtonsContainer.querySelectorAll('.button'),
+];
 const portfolioImages = [...document.querySelectorAll('.photo')];
 
 const changePhoto = (event) => {
@@ -11,7 +13,7 @@ const changePhoto = (event) => {
           (photo.src = `./images/img/${season}/${index + 1}.jpg`)
       );
 
-      buttons.forEach((el) => el.classList.remove('active'));
+      portfolioButtons.forEach((el) => el.classList.remove('active'));
     }
     event.target.classList.add('active');
   });
